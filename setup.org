@@ -1,0 +1,12 @@
+#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
+
+* Things to remember
+- brew install emacs --with-cocoa
+- brew tap caskroom/fonts
+- brew cask install font-source-code-pro
+
+* Javascript layer
+- npm install -g tern
+- npm install -g js-beautify 
+- npm install -g jshint
+- (javascript :variables javascript-disable-tern-port-files nil)
