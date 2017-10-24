@@ -8,7 +8,6 @@
 #+BEGIN_SRC
 ln -s .emacs.d/.spacemacs .spacemacs
 #+END_SRC
-- copy .spacemacs file to user directory ~/.spacemacs
 
 * Javascript layer
 - npm install -g tern
