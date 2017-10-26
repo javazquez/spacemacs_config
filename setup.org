@@ -14,3 +14,29 @@ ln -s .emacs.d/.spacemacs .spacemacs
 - npm install -g js-beautify 
 - npm install -g jshint
 - (javascript :variables javascript-disable-tern-port-files nil)
+** typescript 
+- If you want linting run: npm install -g typescript npm install -g tslint
+- If you want to use typescript-formatter for formatting run: npm install -g typescript-formatter
+- For best results, make sure that the auto-completion (company) and html layers are enabled.
+-add typescript to the existing dotspacemacs-configuration-layers list in this file.
+
+#+BEGIN_SRC
+(setq-default dotspacemacs-configuration-layers '(typescript))
+#+END_SRC
+-If you need formatting on save:
+
+#+BEGIN_SRC
+(setq-default dotspacemacs-configuration-layers '(
+  (typescript :variables
+              typescript-fmt-on-save t)))
+#+END_SRC
+
+You can choose formatting tool:
+
+#+BEGIN_SRC
+(setq-default dotspacemacs-configuration-layers '(
+  (typescript :variables
+              typescript-fmt-tool 'typescript-formatter)))
+#+END_SRC
+Default is ‘tide .
+
