@@ -40,3 +40,6 @@ You can choose formatting tool:
 #+END_SRC
 Default is ‘tide .
 
+
+brew tap caskroom/fonts   
+brew cask install font-inconsolata
