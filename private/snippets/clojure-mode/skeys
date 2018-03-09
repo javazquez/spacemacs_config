@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: skeys
+# key: skeys
+# --
+(s/keys ${1:$$(yas-choose-value '(:req :req-un))} [::$2]
+        ${3:$$(yas-choose-value '(:opt :opt-un))} [::$4])

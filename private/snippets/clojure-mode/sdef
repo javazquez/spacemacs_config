@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: sdef
+# key: sdef
+# --
+(s/def ::$1)
